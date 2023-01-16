@@ -13,6 +13,11 @@
       "name": "Quick Start",
       "command": "node .",
       "runAtStart": true
+    },
+    "yarn install": {
+      "name": "Install Dependencies",
+      "command": "yarn install",
+      "runAtStart": true
     }
   }
 }
