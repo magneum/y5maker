@@ -1,4 +1,12 @@
 {
+  "name": "god-dl",
+  "version": "1.0.0",
+  "description": "multi downloader",
+  "main": "index.js",
+  "repository": "https://github.com/magneum/god-dl.git",
+  "author": "magneum",
+  "license": "MIT",
+  "private": false,
   "type": "module",
   "dependencies": {
     "tinyurl": "^1.1.7",
