@@ -2,7 +2,17 @@ import { shorten } from "tinyurl";
 import { YouTube } from "./maker.js";
 
 export async function userInput(quality, url) {
-  return new Promise(async (resolve, reject) => {
+  return new Promise(async (resolve) => {
+    if (!quality || !url) {
+      resolve({
+        _message: "[ERROR] No Quality/Url Argument provided!",
+        _usage: "'128kbps', 'https://youtu.be/iik25wqIuFo'",
+        _qualities: {
+          videos: "1080p, 720p, 480p, 360p, 240p, 144p",
+          audio: "128kbps",
+        },
+      });
+    }
     if (quality == "1080p") {
       YouTube(url)
         .catch((_) => YouTube(url))
